@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Example eight-bar spatial path</title>
+  <desc id="desc">Top view of a sound moving from the front, around the listener's left, and out to the right over eight bars, with a side view of elevation rising from ear level toward the ceiling.</desc>
+  <rect width="960" height="420" rx="16" fill="#f6f3ee"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" fill="#1e2832">
+    <text x="36" y="42" font-size="18" font-weight="650">Example path over eight bars</text>
+    <text x="36" y="64" font-size="13" fill="#5c6770">An illustration for the experiment. Not a Logic preset.</text>
+
+    <rect x="24" y="84" width="444" height="312" rx="12" fill="#fff" stroke="#e2ddd4"/>
+    <rect x="492" y="84" width="444" height="312" rx="12" fill="#fff" stroke="#e2ddd4"/>
+    <text x="48" y="116" font-size="14" fill="#3d4a57">Top view · Left/Right and Back/Front, or Angle</text>
+    <text x="516" y="116" font-size="14" fill="#3d4a57">Side view · Elevation</text>
+
+    <!-- top-view path -->
+    <circle cx="246" cy="250" r="92" fill="none" stroke="#e2ddd4" stroke-dasharray="3 4"/>
+    <path d="M228 168 C150 176 150 250 176 312 C210 360 330 340 348 250" fill="none" stroke="#9a4e32" stroke-width="2.5"/>
+    <circle cx="246" cy="250" r="10" fill="none" stroke="#1e2832" stroke-width="2"/>
+    <text x="246" y="274" font-size="12" text-anchor="middle">you</text>
+    <g font-size="12" fill="#9a4e32">
+      <circle cx="228" cy="168" r="5" fill="#9a4e32"/>
+      <text x="228" y="156" text-anchor="middle">bar 1 · front</text>
+      <circle cx="168" cy="236" r="5" fill="#9a4e32"/>
+      <text x="118" y="232">bar 3</text>
+      <circle cx="190" cy="318" r="5" fill="#9a4e32"/>
+      <text x="150" y="344">bar 5 · behind</text>
+      <circle cx="348" cy="250" r="5" fill="#9a4e32"/>
+      <text x="360" y="246">bar 8 · right</text>
+    </g>
+
+    <!-- elevation -->
+    <line x1="560" y1="300" x2="880" y2="300" stroke="#c5c0b6"/>
+    <line x1="560" y1="160" x2="880" y2="160" stroke="#c5c0b6" stroke-dasharray="3 4"/>
+    <text x="548" y="304" font-size="12" text-anchor="end" fill="#5c6770">0 ear level</text>
+    <text x="548" y="164" font-size="12" text-anchor="end" fill="#5c6770">+1 ceiling</text>
+    <path d="M580 300 C680 300 740 210 860 168" fill="none" stroke="#9a4e32" stroke-width="2.5"/>
+    <g fill="#9a4e32" font-size="12">
+      <circle cx="580" cy="300" r="5"/>
+      <text x="580" y="322" text-anchor="middle">bar 1</text>
+      <circle cx="720" cy="250" r="5"/>
+      <text x="720" y="242" text-anchor="middle">bar 5</text>
+      <circle cx="860" cy="168" r="5"/>
+      <text x="860" y="154" text-anchor="middle">bar 8</text>
+    </g>
+    <text x="714" y="364" font-size="13" text-anchor="middle" fill="#3d4a57">Horizontal travel and the rise are separate curves</text>
+  </g>
+</svg>

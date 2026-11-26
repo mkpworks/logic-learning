@@ -1,0 +1,12 @@
+<div class="md-copyright">
+  {% set b = config.extra.branding %}
+  <div class="md-copyright__highlight">
+    {{ b.name }} · {{ b.company }}
+  </div>
+  <nav class="notebook-footer-links" aria-label="Repository">
+    <a href="{{ b.issues_url }}">Open issues</a>
+    <a href="{{ b.repository_url }}">Repository</a>
+    <a href="{{ b.project_href }}">GitHub Project</a>
+    <a href="{{ b.curiosity_url }}">Add a Curiosity</a>
+  </nav>
+</div>

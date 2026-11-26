@@ -1,0 +1,28 @@
+name: Curiosity
+description: A question or idea for the notebook. Issues and articles are public. Submitting does not start research.
+title: ""
+labels: ["curiosity"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public**, like every issue and published article in this repository. Do not include private, unreleased, or personal information.
+
+        Use the title above as the title of the curiosity.
+
+        Submitting a curiosity does not start research and does not publish an article. Nothing is written until you explicitly ask for that.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or idea
+      description: What do you want to understand or try?
+      placeholder: How do I move one instrument in a circle around the listener?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional additional context
+      description: A software version, a link, or why this matters. Leave this blank if you have nothing to add.
+    validations:
+      required: false

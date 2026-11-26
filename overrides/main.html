@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% set b = config.extra.branding %}
+  <style>
+    :root {
+      --md-primary-fg-color: {{ b.accent }};
+      --md-primary-fg-color--light: {{ b.accent_light }};
+      --md-primary-fg-color--dark: {{ b.accent_dark }};
+      --md-primary-bg-color: #ffffff;
+      --md-primary-bg-color--light: #ffffffb3;
+      --md-accent-fg-color: {{ b.accent }};
+      --md-accent-fg-color--transparent: {{ b.accent_transparent }};
+    }
+    [data-md-color-scheme="slate"] {
+      --md-accent-fg-color: {{ b.accent_on_dark }};
+      --md-accent-fg-color--transparent: {{ b.accent_on_dark_transparent }};
+    }
+  </style>
+{% endblock %}

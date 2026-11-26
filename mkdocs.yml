@@ -1,0 +1,84 @@
+# Branding is the source of truth. hooks/catalog.py copies it onto the
+# site name, description, URL, repository link, and theme colors.
+# MkDocs requires site_name before that hook runs; the hook overwrites it.
+site_name: Music Production Notebook
+site_description: A growing collection of music production techniques, research and creative discoveries.
+site_url: https://mkpworks.github.io/logic-learning/
+
+repo_url: https://github.com/mkpworks/logic-learning
+repo_name: mkpworks/logic-learning
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+not_in_nav: |
+  articles/**
+
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  icon:
+    logo: material/music-note
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.action.edit
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+hooks:
+  - hooks/catalog.py
+
+watch:
+  - hooks
+  - overrides
+
+extra:
+  generator: false
+  branding:
+    name: Music Production Notebook
+    company: MKP Works
+    description: A growing collection of music production techniques, research and creative discoveries.
+    # Path under docs/, or leave blank for the wordmark. Example: assets/logo.svg
+    logo: ""
+    accent: "#3d5a80"
+    repository_url: https://github.com/mkpworks/logic-learning
+    # No GitHub Project was attached to mkpworks or logic-learning on 26 November 2026.
+    # Paste a Project URL here when one exists. Until then the site links to the org projects page.
+    project_url: ""
+    site_url: https://mkpworks.github.io/logic-learning/
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/site.js

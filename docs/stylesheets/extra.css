@@ -1,0 +1,124 @@
+.md-header__button.md-logo svg,
+.md-header__button.md-logo img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.notebook-kicker {
+  margin: -0.4rem 0 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.notebook-search {
+  display: flex;
+  align-items: center;
+  margin: 1.1rem 0 1rem;
+  padding: 0.15rem 0.85rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.4rem;
+  background: var(--md-default-bg-color);
+}
+
+.notebook-search input {
+  width: 100%;
+  padding: 0.7rem 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+}
+
+.notebook-search input:focus {
+  outline: none;
+}
+
+.notebook-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.4rem;
+}
+
+.notebook-actions .md-button {
+  margin: 0;
+}
+
+.notebook-card {
+  margin: 0 0 0.85rem;
+  padding: 0.15rem 1rem 0.35rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+}
+
+.notebook-card__title {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.notebook-card__title a {
+  color: var(--md-typeset-a-color);
+}
+
+.notebook-card__meta,
+.article-meta {
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.notebook-tags {
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.notebook-tags a,
+.article-meta a {
+  color: var(--md-typeset-a-color);
+}
+
+.article-pager,
+.article-related {
+  margin-top: 1.4rem;
+  font-size: 0.86rem;
+}
+
+.md-typeset p > img {
+  display: block;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+}
+
+.md-typeset p:has(> img) + p > em:only-child {
+  display: block;
+  margin-top: -0.15rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.84rem;
+}
+
+.notebook-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin-top: 0.35rem;
+}
+
+.notebook-footer-links a {
+  color: var(--md-footer-fg-color--light, var(--md-default-fg-color--light));
+}
+
+.md-typeset table {
+  font-size: 0.84rem;
+}
+
+@media (max-width: 40rem) {
+  .notebook-actions .md-button {
+    width: 100%;
+    text-align: center;
+  }
+}
