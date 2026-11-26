@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+  <title id="title">Bed panning compared with object panning</title>
+  <desc id="desc">On the left, a bed spreads one signal across front speakers. On the right, an object is a single point whose position is metadata, while the speakers stay unused until the renderer.</desc>
+  <rect width="960" height="460" rx="16" fill="#f6f3ee"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect x="24" y="24" width="444" height="412" rx="12" fill="#fff" stroke="#e2ddd4"/>
+    <rect x="492" y="24" width="444" height="412" rx="12" fill="#fff" stroke="#e2ddd4"/>
+    <text x="48" y="62" font-size="22" font-weight="650" fill="#1e2832">Bed</text>
+    <text x="48" y="86" font-size="14" fill="#5c6770">Surround Panner · speaker channels</text>
+    <text x="516" y="62" font-size="22" font-weight="650" fill="#1e2832">Object</text>
+    <text x="516" y="86" font-size="14" fill="#5c6770">3D Object Panner · a point in the room</text>
+
+    <!-- Bed energy across the front speakers -->
+    <polygon points="246,255 188.8,163.4 202.1,156.3 216.2,151.2 231,148.1 246,147 261,148.1 275.8,151.2 289.9,156.3 303.2,163.4" fill="#3d5a80" opacity="0.22"/>
+
+    <!-- Bed speakers -->
+    <g fill="#3d5a80">
+      <circle cx="246" cy="147" r="8"/>
+      <circle cx="188.8" cy="163.4" r="8"/>
+      <circle cx="303.2" cy="163.4" r="8"/>
+      <circle cx="144.5" cy="291.9" r="8"/>
+      <circle cx="347.5" cy="291.9" r="8"/>
+    </g>
+    <g fill="#6e8e62">
+      <circle cx="221.9" cy="180.8" r="6"/>
+      <circle cx="270.1" cy="180.8" r="6"/>
+    </g>
+    <g font-size="12" fill="#3d4a57" text-anchor="middle">
+      <text x="246" y="136">C</text>
+      <text x="176" y="158">L</text>
+      <text x="318" y="158">R</text>
+      <text x="128" y="296">Ls</text>
+      <text x="364" y="296">Rs</text>
+      <text x="246" y="214" fill="#6e8e62">height</text>
+    </g>
+    <circle cx="246" cy="255" r="11" fill="none" stroke="#1e2832" stroke-width="2"/>
+    <text x="246" y="280" font-size="12" text-anchor="middle" fill="#1e2832">you</text>
+    <text x="246" y="400" font-size="13" text-anchor="middle" fill="#3d4a57">One signal, split across channels</text>
+
+    <!-- Object: ghost speakers, one puck -->
+    <g fill="none" stroke="#c5c0b6" stroke-width="2">
+      <circle cx="714" cy="147" r="7"/>
+      <circle cx="656.8" cy="163.4" r="7"/>
+      <circle cx="771.2" cy="163.4" r="7"/>
+      <circle cx="612.5" cy="291.9" r="7"/>
+      <circle cx="815.5" cy="291.9" r="7"/>
+      <circle cx="689.9" cy="180.8" r="5"/>
+      <circle cx="738.1" cy="180.8" r="5"/>
+    </g>
+    <circle cx="714" cy="255" r="11" fill="none" stroke="#1e2832" stroke-width="2"/>
+    <text x="714" y="280" font-size="12" text-anchor="middle" fill="#1e2832">you</text>
+    <!-- puck at front-right, not on a speaker -->
+    <circle cx="770" cy="196" r="11" fill="#9a4e32"/>
+    <text x="794" y="190" font-size="13" fill="#9a4e32">object</text>
+    <path d="M770 208 C790 250 860 250 888 286" fill="none" stroke="#9a4e32" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="812" y="286" width="118" height="52" rx="6" fill="#fff" stroke="#9a4e32"/>
+    <text x="871" y="307" font-size="12" text-anchor="middle" fill="#1e2832">position metadata</text>
+    <text x="871" y="324" font-size="12" text-anchor="middle" fill="#5c6770">kept off the audio</text>
+    <text x="714" y="400" font-size="13" text-anchor="middle" fill="#3d4a57">Speakers are chosen later, by the renderer</text>
+  </g>
+</svg>
