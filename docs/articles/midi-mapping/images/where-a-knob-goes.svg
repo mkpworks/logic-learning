@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">Three places a learned knob can land</title>
+  <desc id="desc">A MIDI knob can follow the focused track, stay pinned to one track, or drive a Smart Control screen control whose parameter mapping belongs to the selected track's patch.</desc>
+  <rect width="960" height="430" rx="16" fill="#f6f3ee"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" fill="#1e2832">
+    <text x="36" y="42" font-size="18" font-weight="650">Where one physical knob can go</text>
+    <text x="36" y="64" font-size="13" fill="#5c6770">Same controller. Three different Logic destinations.</text>
+
+    <rect x="36" y="148" width="150" height="72" rx="10" fill="#fff" stroke="#9a4e32"/>
+    <text x="111" y="178" font-size="15" text-anchor="middle" font-weight="650">Knob</text>
+    <text x="111" y="198" font-size="12" text-anchor="middle" fill="#5c6770">one MIDI message</text>
+
+    <g fill="none" stroke="#9a4e32" stroke-width="1.6">
+      <path d="M186 168 H250"/>
+      <path d="M186 184 H230 C250 184 250 250 270 268"/>
+      <path d="M186 200 H230 C255 200 255 340 270 352"/>
+    </g>
+
+    <rect x="270" y="96" width="640" height="72" rx="10" fill="#fff" stroke="#e2ddd4"/>
+    <text x="290" y="124" font-size="15" font-weight="650">Focused track</text>
+    <text x="290" y="146" font-size="13" fill="#3d4a57">The knob controls that parameter on whichever track has focus, if the parameter exists.</text>
+
+    <rect x="270" y="196" width="640" height="72" rx="10" fill="#fff" stroke="#e2ddd4"/>
+    <text x="290" y="224" font-size="15" font-weight="650">Pinned to one track</text>
+    <text x="290" y="246" font-size="13" fill="#3d4a57">The knob stays on that track or plug-in, even when you select something else. Saved in the project.</text>
+
+    <rect x="270" y="296" width="640" height="88" rx="10" fill="#fff" stroke="#e2ddd4"/>
+    <text x="290" y="324" font-size="15" font-weight="650">Smart Control screen control</text>
+    <text x="290" y="346" font-size="13" fill="#3d4a57">The knob moves an onscreen control. That control's parameter mapping is saved with the patch</text>
+    <text x="290" y="364" font-size="13" fill="#3d4a57">and applies to the selected track.</text>
+  </g>
+</svg>
